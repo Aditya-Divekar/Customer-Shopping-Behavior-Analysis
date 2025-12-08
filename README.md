@@ -125,5 +125,3 @@ This project reflects my approach as an analyst: **curious about patterns, caref
 
 ---
 
-✅ A **project summary for your resume**
-Just tell me!
