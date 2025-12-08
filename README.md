@@ -111,17 +111,3 @@ Built an interactive dashboard visualizing:
 ## 🚀 **About the Project**
 
 This project reflects my hands-on experience in solving real analytics problems using both technical and business lenses. I aimed to build a workflow that feels close to what analysts do in real industry environments—cleaning data, exploring patterns, validating through SQL, and presenting insights clearly through dashboards.
-
----
-
-# 👤 **About Section (Human, Professional, Recruiter-Friendly)**
-
-This project showcases my ability to take raw customer transaction data and turn it into meaningful insights that support decision-making. I combined Python, SQL, and Power BI to understand how different types of customers shop, what drives their spending, and which products contribute most to revenue.
-
-I focused on building a clean, end-to-end pipeline—covering data cleaning, feature engineering, SQL-based business analysis, and a dashboard that presents insights in a simple and actionable way.
-The goal was not just technical execution but also telling a clear story that can help a business improve retention, optimize marketing, and increase revenue.
-
-This project reflects my approach as an analyst: **curious about patterns, careful with data, and committed to delivering insights that truly matter**.
-
----
-
