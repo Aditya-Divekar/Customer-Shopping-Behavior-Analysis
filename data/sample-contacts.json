@@ -1,0 +1,97 @@
+[
+  {
+    "name": "Jennifer Smith",
+    "email": "jennifer.smith@email.com",
+    "phone": "1234567890",
+    "subject": "Wedding Planning",
+    "message": "Hi, I'm planning a wedding for next summer and would like to discuss your wedding planning services. Could you please provide more information about your packages?",
+    "status": "new",
+    "priority": "medium",
+    "createdAt": "2024-01-25T09:30:00.000Z"
+  },
+  {
+    "name": "Tom Brown",
+    "email": "tom.brown@company.com",
+    "phone": "2345678901",
+    "subject": "Corporate Event",
+    "message": "We're organizing our annual company retreat and need catering services for 150 people. Could you send us a quote for a 3-day event?",
+    "status": "read",
+    "priority": "high",
+    "response": {
+      "content": "Thank you for your inquiry. We'll prepare a detailed quote for your 3-day corporate retreat. Our team will contact you within 24 hours.",
+      "respondedAt": "2024-01-25T14:20:00.000Z",
+      "respondedBy": "admin"
+    },
+    "createdAt": "2024-01-25T11:15:00.000Z"
+  },
+  {
+    "name": "Anna Davis",
+    "email": "anna.davis@email.com",
+    "phone": "3456789012",
+    "subject": "Birthday Party",
+    "message": "Looking for birthday party planning for my daughter's 10th birthday. Theme: unicorn party with 30 kids. What are your rates?",
+    "status": "replied",
+    "priority": "medium",
+    "response": {
+      "content": "Thank you for choosing NextEra Event Planner! We love unicorn themes! I'll send you our birthday party packages with pricing. Expect to hear from us soon!",
+      "respondedAt": "2024-01-24T16:45:00.000Z",
+      "respondedBy": "events@idealmemory.com"
+    },
+    "createdAt": "2024-01-24T13:20:00.000Z"
+  },
+  {
+    "name": "Mark Johnson",
+    "email": "mark.johnson@email.com",
+    "phone": "4567890123",
+    "subject": "General Inquiry",
+    "message": "Do you provide services for outdoor events? We're planning a garden party and wondering about weather contingency plans.",
+    "status": "new",
+    "priority": "low",
+    "createdAt": "2024-01-26T08:45:00.000Z"
+  },
+  {
+    "name": "Sarah Wilson",
+    "email": "sarah.wilson@email.com",
+    "phone": "5678901234",
+    "subject": "Quote Request",
+    "message": "Hi, I need a quote for a wedding reception for 200 guests. Venue is already booked. Looking for complete catering and decoration services.",
+    "status": "read",
+    "priority": "high",
+    "createdAt": "2024-01-23T15:30:00.000Z"
+  },
+  {
+    "name": "David Lee",
+    "email": "david.lee@email.com",
+    "phone": "6789012345",
+    "subject": "Complaint",
+    "message": "I had an issue with the service at my event last week. The setup was delayed by 2 hours. This is unacceptable for the amount we paid.",
+    "status": "new",
+    "priority": "urgent",
+    "createdAt": "2024-01-26T10:15:00.000Z"
+  },
+  {
+    "name": "Lisa Chen",
+    "email": "lisa.chen@email.com",
+    "phone": "7890123456",
+    "subject": "Event Decoration",
+    "message": "I love your decoration work! Can you handle a vintage-themed anniversary party for 50 people? What's included in your decoration packages?",
+    "status": "replied",
+    "priority": "medium",
+    "response": {
+      "content": "Thank you for your interest! We absolutely love vintage themes. I'll send you our decoration portfolio and package details for your anniversary party.",
+      "respondedAt": "2024-01-22T12:30:00.000Z",
+      "respondedBy": "decorations@idealmemory.com"
+    },
+    "createdAt": "2024-01-22T09:45:00.000Z"
+  },
+  {
+    "name": "Robert Taylor",
+    "email": "robert.taylor@email.com",
+    "phone": "8901234567",
+    "subject": "Photography & Video",
+    "message": "Do you provide photography and videography services? We need both for our wedding in June. What packages do you offer?",
+    "status": "new",
+    "priority": "medium",
+    "createdAt": "2024-01-26T14:20:00.000Z"
+  }
+]

@@ -1,0 +1,32 @@
+<!-- index.html -->
+<div id="chatbox">
+    <input type="text" id="userInput" placeholder="Ask something..." />
+    <input type="number" id="budgetInput" placeholder="Your budget" />
+    <button onclick="sendMessage()">Send</button>
+    <div id="chatResponse"></div>
+</div>
+
+<script>
+function sendMessage() {
+    const message = document.getElementById('userInput').value;
+    const budget = document.getElementById('budgetInput').value;
+
+    fetch('http://localhost:5000/chat', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({ message, budget })
+    })
+    .then(res => res.json())
+    .then(data => {
+        const respBox = document.getElementById('chatResponse');
+        respBox.innerHTML = `<p><b>AI:</b> ${data.response}</p>`;
+        data.plans.forEach(plan => {
+            respBox.innerHTML += `<div>
+                <h4>${plan.name}</h4>
+                <img src="${plan.image}" width="150" />
+                <p>${plan.description}</p>
+            </div>`;
+        });
+    });
+}
+</script>

@@ -1,0 +1,156 @@
+{
+  "team": [
+    {
+      "id": 1,
+      "name": "Sarah Johnson",
+      "position": "Founder & CEO",
+      "bio": "With over 10 years in event planning, Sarah leads our team with passion and expertise. She specializes in luxury weddings and corporate events.",
+      "email": "sarah@idealmemory.com",
+      "phone": "+1 (555) 123-4567",
+      "image": "images/team-1.jpg",
+      "social": {
+        "linkedin": "https://linkedin.com/in/sarah-johnson",
+        "twitter": "https://twitter.com/sarah_j",
+        "instagram": "https://instagram.com/sarah_events"
+      },
+      "specialties": ["Wedding Planning", "Luxury Events", "Corporate Events"],
+      "experience": "10+ years",
+      "education": "MBA in Event Management",
+      "languages": ["English", "Spanish", "French"]
+    },
+    {
+      "id": 2,
+      "name": "Michael Chen",
+      "position": "Head Chef",
+      "bio": "A culinary artist with 15 years of experience creating exceptional dining experiences. Michael brings creativity and precision to every dish.",
+      "email": "michael@idealmemory.com",
+      "phone": "+1 (555) 234-5678",
+      "image": "images/team-2.jpg",
+      "social": {
+        "linkedin": "https://linkedin.com/in/michael-chen-chef",
+        "twitter": "https://twitter.com/chef_michael",
+        "instagram": "https://instagram.com/chef_michael_chen"
+      },
+      "specialties": ["International Cuisine", "Wedding Catering", "Corporate Dining"],
+      "experience": "15+ years",
+      "education": "Culinary Arts Degree",
+      "languages": ["English", "Mandarin", "Japanese"]
+    },
+    {
+      "id": 3,
+      "name": "Emily Rodriguez",
+      "position": "Event Coordinator",
+      "bio": "Emily ensures every detail is perfect with her meticulous attention to client needs. She specializes in birthday parties and family celebrations.",
+      "email": "emily@idealmemory.com",
+      "phone": "+1 (555) 345-6789",
+      "image": "images/team-3.jpg",
+      "social": {
+        "linkedin": "https://linkedin.com/in/emily-rodriguez",
+        "twitter": "https://twitter.com/emily_events",
+        "instagram": "https://instagram.com/emily_coordinates"
+      },
+      "specialties": ["Birthday Parties", "Family Events", "Theme Events"],
+      "experience": "8+ years",
+      "education": "Event Management Certificate",
+      "languages": ["English", "Spanish"]
+    },
+    {
+      "id": 4,
+      "name": "David Kim",
+      "position": "Creative Director",
+      "bio": "David brings innovative design concepts and creative solutions to every event. His artistic vision transforms ordinary spaces into extraordinary experiences.",
+      "email": "david@idealmemory.com",
+      "phone": "+1 (555) 456-7890",
+      "image": "images/team-4.jpg",
+      "social": {
+        "linkedin": "https://linkedin.com/in/david-kim-creative",
+        "twitter": "https://twitter.com/david_creative",
+        "instagram": "https://instagram.com/david_kim_designs"
+      },
+      "specialties": ["Event Design", "Floral Arrangements", "Lighting Design"],
+      "experience": "12+ years",
+      "education": "Fine Arts Degree",
+      "languages": ["English", "Korean"]
+    },
+    {
+      "id": 5,
+      "name": "Lisa Thompson",
+      "position": "Client Relations Manager",
+      "bio": "Lisa is the first point of contact for our clients, ensuring exceptional service from initial consultation to event completion.",
+      "email": "lisa@idealmemory.com",
+      "phone": "+1 (555) 567-8901",
+      "image": "images/team-5.jpg",
+      "social": {
+        "linkedin": "https://linkedin.com/in/lisa-thompson",
+        "twitter": "https://twitter.com/lisa_clientcare",
+        "instagram": "https://instagram.com/lisa_clientrelations"
+      },
+      "specialties": ["Client Relations", "Project Management", "Customer Service"],
+      "experience": "7+ years",
+      "education": "Business Administration Degree",
+      "languages": ["English", "French"]
+    },
+    {
+      "id": 6,
+      "name": "Robert Wilson",
+      "position": "Photography & Videography Lead",
+      "bio": "Robert captures every precious moment with artistic flair and technical expertise. He specializes in wedding and event photography.",
+      "email": "robert@idealmemory.com",
+      "phone": "+1 (555) 678-9012",
+      "image": "images/team-6.jpg",
+      "social": {
+        "linkedin": "https://linkedin.com/in/robert-wilson-photography",
+        "twitter": "https://twitter.com/robert_photos",
+        "instagram": "https://instagram.com/robert_wilson_photography"
+      },
+      "specialties": ["Wedding Photography", "Event Videography", "Photo Editing"],
+      "experience": "9+ years",
+      "education": "Photography Degree",
+      "languages": ["English"]
+    }
+  ],
+  "departments": [
+    {
+      "name": "Event Planning",
+      "members": ["Sarah Johnson", "Emily Rodriguez", "Lisa Thompson"],
+      "description": "Complete event planning and coordination"
+    },
+    {
+      "name": "Culinary Services",
+      "members": ["Michael Chen"],
+      "description": "Catering and food services"
+    },
+    {
+      "name": "Creative Design",
+      "members": ["David Kim"],
+      "description": "Decoration and design services"
+    },
+    {
+      "name": "Media Services",
+      "members": ["Robert Wilson"],
+      "description": "Photography and videography"
+    }
+  ],
+  "awards": [
+    {
+      "year": "2024",
+      "award": "Best Wedding Planner",
+      "organization": "Local Business Awards"
+    },
+    {
+      "year": "2023",
+      "award": "Excellence in Catering",
+      "organization": "Culinary Society"
+    },
+    {
+      "year": "2023",
+      "award": "Top Event Planning Company",
+      "organization": "Event Industry Association"
+    },
+    {
+      "year": "2022",
+      "award": "Customer Choice Award",
+      "organization": "Local Chamber of Commerce"
+    }
+  ]
+}

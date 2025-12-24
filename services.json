@@ -1,0 +1,219 @@
+{
+  "services": [
+    {
+      "id": "wedding-planning",
+      "name": "Wedding Planning",
+      "description": "Complete wedding planning services from engagement to reception. We handle every detail to make your special day perfect.",
+      "price": "Starting from ₹2,50,000",
+      "icon": "fas fa-heart",
+      "features": [
+        "Venue selection and booking",
+        "Complete decoration and setup",
+        "Premium catering services",
+        "Photography & videography",
+        "Entertainment coordination",
+        "Guest management",
+        "Timeline management",
+        "Vendor coordination"
+      ],
+      "images": [
+        "images/wedding-1.jpg",
+        "images/wedding-2.jpg",
+        "images/wedding-3.jpg"
+      ],
+      "popular": true,
+      "category": "planning"
+    },
+    {
+      "id": "birthday-celebrations",
+      "name": "Birthday Celebrations",
+      "description": "Make every birthday special with our creative party planning services. From themed decorations to custom cakes.",
+      "price": "Starting from ₹15,000",
+      "icon": "fas fa-birthday-cake",
+      "features": [
+        "Themed decorations",
+        "Custom birthday cakes",
+        "Entertainment setup",
+        "Party favors and gifts",
+        "Photo booth services",
+        "Catering for all ages",
+        "Game coordination",
+        "Cleanup services"
+      ],
+      "images": [
+        "images/birthday-1.jpg",
+        "images/birthday-2.jpg",
+        "images/birthday-3.jpg"
+      ],
+      "popular": false,
+      "category": "planning"
+    },
+    {
+      "id": "corporate-events",
+      "name": "Corporate Events",
+      "description": "Professional event management for conferences, seminars, product launches, and corporate gatherings.",
+      "price": "Starting from ₹75,000",
+      "icon": "fas fa-briefcase",
+      "features": [
+        "Conference setup and management",
+        "AV equipment and technical support",
+        "Professional catering services",
+        "Networking facilitation",
+        "Registration management",
+        "Branding and signage",
+        "Event documentation",
+        "Post-event follow-up"
+      ],
+      "images": [
+        "images/corporate-1.jpg",
+        "images/corporate-2.jpg",
+        "images/corporate-3.jpg"
+      ],
+      "popular": true,
+      "category": "corporate"
+    },
+    {
+      "id": "premium-catering",
+      "name": "Premium Catering",
+      "description": "Exquisite culinary experiences with diverse menu options. From traditional favorites to international cuisines.",
+      "price": "Starting from ₹500 per person",
+      "icon": "fas fa-utensils",
+      "features": [
+        "Multi-cuisine menu options",
+        "Live cooking stations",
+        "Dietary accommodations",
+        "Professional serving staff",
+        "Premium tableware",
+        "Beverage services",
+        "Custom menu planning",
+        "Tasting sessions"
+      ],
+      "images": [
+        "images/catering-1.jpg",
+        "images/catering-2.jpg",
+        "images/catering-3.jpg"
+      ],
+      "popular": true,
+      "category": "catering"
+    },
+    {
+      "id": "event-decoration",
+      "name": "Event Decoration",
+      "description": "Transform any space into a magical setting with our creative decoration services. Every detail matters.",
+      "price": "Starting from ₹25,000",
+      "icon": "fas fa-palette",
+      "features": [
+        "Custom theme design",
+        "Floral arrangements",
+        "Lighting design and setup",
+        "Stage and backdrop setup",
+        "Table decorations",
+        "Entrance decorations",
+        "Photo booth setup",
+        "Cleanup services"
+      ],
+      "images": [
+        "images/decoration-1.jpg",
+        "images/decoration-2.jpg",
+        "images/decoration-3.jpg"
+      ],
+      "popular": false,
+      "category": "decoration"
+    },
+    {
+      "id": "photography-videography",
+      "name": "Photography & Videography",
+      "description": "Capture every precious moment with our professional photography and videography services.",
+      "price": "Starting from ₹35,000",
+      "icon": "fas fa-camera",
+      "features": [
+        "Professional event photography",
+        "HD video documentation",
+        "Photo editing and retouching",
+        "Digital photo albums",
+        "Video editing and highlights",
+        "Drone photography (if applicable)",
+        "Same-day preview",
+        "Online gallery access"
+      ],
+      "images": [
+        "images/photography-1.jpg",
+        "images/photography-2.jpg",
+        "images/photography-3.jpg"
+      ],
+      "popular": true,
+      "category": "media"
+    }
+  ],
+  "categories": [
+    {
+      "id": "planning",
+      "name": "Event Planning",
+      "description": "Complete event planning and coordination services"
+    },
+    {
+      "id": "corporate",
+      "name": "Corporate Events",
+      "description": "Professional business event management"
+    },
+    {
+      "id": "catering",
+      "name": "Catering Services",
+      "description": "Premium food and beverage services"
+    },
+    {
+      "id": "decoration",
+      "name": "Decoration",
+      "description": "Creative decoration and setup services"
+    },
+    {
+      "id": "media",
+      "name": "Media Services",
+      "description": "Photography, videography, and documentation"
+    }
+  ],
+  "pricing": {
+    "wedding-planning": {
+      "basic": {
+        "price": 250000,
+        "features": ["Venue coordination", "Basic decoration", "Standard catering"]
+      },
+      "premium": {
+        "price": 400000,
+        "features": ["Full planning", "Premium decoration", "Gourmet catering", "Photography"]
+      },
+      "luxury": {
+        "price": 600000,
+        "features": ["Complete planning", "Luxury decoration", "Fine dining", "Full media package"]
+      }
+    },
+    "birthday-celebrations": {
+      "basic": {
+        "price": 15000,
+        "features": ["Basic decoration", "Simple catering", "Party games"]
+      },
+      "premium": {
+        "price": 30000,
+        "features": ["Themed decoration", "Premium catering", "Entertainment", "Photo booth"]
+      },
+      "luxury": {
+        "price": 50000,
+        "features": ["Custom theme", "Gourmet catering", "Live entertainment", "Professional photography"]
+      }
+    },
+    "corporate-events": {
+      "basic": {
+        "price": 75000,
+        "features": ["Basic setup", "Standard catering", "AV equipment"]
+      },
+      "premium": {
+        "price": 150000,
+        "features": ["Full coordination", "Premium catering", "Professional AV", "Branding"]
+      },
+      "luxury": {
+        "price": 250000,
+        "features": ["Complete management", "Fine dining", "Advanced AV", "Custom branding"]
+      }
+    }
+  }
+}

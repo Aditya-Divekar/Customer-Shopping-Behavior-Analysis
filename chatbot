@@ -1,0 +1,38 @@
+# chatbot_backend.py
+pip install flask openai
+from flask import Flask, request, jsonify
+import openai
+
+openai.api_key = "your_openai_api_key"
+
+app = Flask(__name__)
+
+# Mock data: Replace with DB or CMS integration
+plans = [
+    {"name": "Silver Package", "budget": 1000, "image": "/static/silver.jpg", "description": "Basic decor, food for 50 guests."},
+    {"name": "Gold Package", "budget": 3000, "image": "/static/gold.jpg", "description": "Premium decor, live music, food for 100 guests."},
+    {"name": "Platinum Package", "budget": 5000, "image": "/static/platinum.jpg", "description": "Luxury decor, gourmet catering, entertainment."}
+]
+
+@app.route('/chat', methods=['POST'])
+def chat():
+    data = request.json
+    user_message = data.get('message')
+    budget = data.get('budget', 0)
+
+    # Select plan based on budget
+    suitable_plans = [p for p in plans if p["budget"] <= int(budget)]
+
+    # AI Answering
+    ai_response = openai.ChatCompletion.create(
+        model="gpt-4",
+        messages=[{"role": "user", "content": user_message}]
+    )["choices"][0]["message"]["content"]
+
+    return jsonify({
+        "plans": suitable_plans,
+        "response": ai_response
+    })
+
+if __name__ == '__main__':
+    app.run(port=5000)

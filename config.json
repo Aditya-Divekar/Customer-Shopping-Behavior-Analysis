@@ -1,0 +1,69 @@
+{
+  "server": {
+    "port": 3000,
+    "host": "localhost",
+    "environment": "development"
+  },
+  "database": {
+    "mongodb": {
+      "uri": "mongodb://localhost:27017/ideal-memory-caterers",
+      "options": {
+        "useNewUrlParser": true,
+        "useUnifiedTopology": true,
+        "maxPoolSize": 10,
+        "serverSelectionTimeoutMS": 5000,
+        "socketTimeoutMS": 45000
+      }
+    }
+  },
+  "security": {
+    "jwt": {
+      "secret": "your-super-secret-jwt-key-change-in-production",
+      "expiresIn": "24h"
+    },
+    "rateLimit": {
+      "windowMs": 900000,
+      "maxRequests": 100
+    }
+  },
+  "email": {
+    "host": "smtp.gmail.com",
+    "port": 587,
+    "secure": false,
+    "auth": {
+      "user": "your-email@gmail.com",
+      "pass": "your-app-password"
+    }
+  },
+  "fileUpload": {
+    "maxSize": 10485760,
+    "allowedTypes": [
+      "image/jpeg",
+      "image/png",
+      "image/webp",
+      "image/gif"
+    ],
+    "destination": "./uploads/"
+  },
+  "cors": {
+    "origin": [
+      "http://localhost:3000",
+      "http://127.0.0.1:3000"
+    ],
+    "credentials": true
+  },
+  "services": {
+    "events": {
+      "defaultStatus": "pending",
+      "autoApprove": false
+    },
+    "testimonials": {
+      "autoApprove": false,
+      "maxLength": 1000
+    },
+    "contact": {
+      "autoResponse": true,
+      "responseEmail": "noreply@idealmemory.com"
+    }
+  }
+}

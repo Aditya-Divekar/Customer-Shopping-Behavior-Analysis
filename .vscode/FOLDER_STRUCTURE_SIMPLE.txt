@@ -1,0 +1,95 @@
+Elite_event_planner_website/
+│
+├── .vscode/
+│   └── settings.json
+│
+├── data/
+│   ├── sample-contacts.json
+│   ├── sample-events.json
+│   └── sample-testimonials.json
+│
+├── middleware/
+│   └── auth.js
+│
+├── models/
+│   ├── Contact.js
+│   ├── Event.js
+│   ├── Testimonial.js
+│   └── User.js
+│
+├── node_modules/
+│   └── (dependencies - exclude from GitHub)
+│
+├── public/
+│   ├── about.html
+│   ├── admin.html
+│   ├── contact.html
+│   ├── index.html
+│   ├── login.html
+│   ├── profile.html
+│   ├── register.html
+│   ├── services.html
+│   ├── test-api.html
+│   │
+│   ├── css/
+│   │   ├── about.css
+│   │   ├── admin.css
+│   │   ├── contact.css
+│   │   ├── login.css
+│   │   ├── profile.css
+│   │   ├── register.css
+│   │   ├── services.css
+│   │   └── style.css
+│   │
+│   ├── js/
+│   │   ├── about.js
+│   │   ├── admin.js
+│   │   ├── contact.js
+│   │   ├── login.js
+│   │   ├── profile.js
+│   │   ├── register.js
+│   │   ├── script.js
+│   │   └── services.js
+│   │
+│   └── (image files)
+│       ├── b1.jpg, b2.jpg, b3.jpg
+│       ├── background-image.jpg
+│       ├── birthday.jpg
+│       ├── bk1.jpeg, bk2.jpeg
+│       ├── bp1.jpg, bp2.jpg, bp3.jpg
+│       ├── c1.jpg, c2.jpg, c3.jpg
+│       ├── f1.jpg, f2.jpeg
+│       ├── our time.jpg
+│       ├── ph1.jpg, ph2.jpg, ph3.jpg
+│       ├── wed3.jpg
+│       └── wedding1.jpg, wedding2.jpg
+│
+└── routes/
+    ├── auth.js
+    ├── contact.js
+    ├── events.js
+    └── testimonials.js
+
+═══════════════════════════════════════════════════════════════
+
+📊 FILE COUNT SUMMARY:
+
+Backend Files:
+  • Routes: 4 files
+  • Models: 4 files
+  • Middleware: 1 file
+  • Sample Data: 3 files
+
+Frontend Files:
+  • HTML Pages: 9 files
+  • CSS Stylesheets: 8 files
+  • JavaScript Files: 8 files
+  • Image Files: 15+ files
+
+Configuration:
+  • VS Code Settings: 1 file
+
+═══════════════════════════════════════════════════════════════
+
+✅ ALL FILES FORMATTED AND READY FOR GITHUB UPLOAD
+

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextEra Event Planner Caterers - Demo Version</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #555;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+        input:focus, select:focus, textarea:focus {
+            border-color: #667eea;
+            outline: none;
+        }
+        button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            width: 100%;
+            transition: transform 0.2s;
+        }
+        button:hover {
+            transform: translateY(-2px);
+        }
+        .success {
+            background: #d4edda;
+            color: #155724;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border: 1px solid #c3e6cb;
+        }
+        .data-display {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+            border: 1px solid #dee2e6;
+        }
+        .data-item {
+            background: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+        .clear-btn {
+            background: #dc3545;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🏢 NextEra Event Planner Caterers</h1>
+            <p><strong>Demo Version - Data Stored Locally</strong></p>
+            <p>This demo stores data in your browser's local storage. Install Node.js for full MongoDB integration.</p>
+        </div>
+
+        <form id="eventForm">
+            <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="mobile">Mobile Number *</label>
+                <input type="tel" id="mobile" name="mobile" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email">
+            </div>
+
+            <div class="form-group">
+                <label for="eventType">Event Type *</label>
+                <select id="eventType" name="eventType" required>
+                    <option value="">Select Event Type</option>
+                    <option value="Wedding">Wedding</option>
+                    <option value="Birthday Party">Birthday Party</option>
+                    <option value="Corporate Event">Corporate Event</option>
+                    <option value="Conference">Conference</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="eventDate">Event Date *</label>
+                <input type="date" id="eventDate" name="eventDate" required>
+            </div>
+
+            <div class="form-group">
+                <label for="venue">Event Venue *</label>
+                <input type="text" id="venue" name="venue" required>
+            </div>
+
+            <div class="form-group">
+                <label for="guestCount">Expected Guest Count</label>
+                <input type="number" id="guestCount" name="guestCount" min="1" max="10000">
+            </div>
+
+            <div class="form-group">
+                <label for="budget">Budget Range</label>
+                <select id="budget" name="budget">
+                    <option value="">Select Budget Range</option>
+                    <option value="under-50000">Under ₹50,000</option>
+                    <option value="50000-100000">₹50,000 - ₹1,00,000</option>
+                    <option value="100000-250000">₹1,00,000 - ₹2,50,000</option>
+                    <option value="250000-500000">₹2,50,000 - ₹5,00,000</option>
+                    <option value="over-500000">Over ₹5,00,000</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="additionalInfo">Additional Information</label>
+                <textarea id="additionalInfo" name="additionalInfo" rows="4"></textarea>
+            </div>
+
+            <button type="submit">📝 Submit Event Registration</button>
+        </form>
+
+        <div id="successMessage" class="success" style="display: none;">
+            ✅ Event registered successfully! Data stored locally.
+        </div>
+
+        <div class="data-display">
+            <h3>📊 Stored Events (Local Storage)</h3>
+            <div id="storedEvents">
+                <p>No events stored yet.</p>
+            </div>
+            <button class="clear-btn" onclick="clearStoredData()">🗑️ Clear All Data</button>
+        </div>
+    </div>
+
+    <script>
+        // Load and display stored data
+        function loadStoredData() {
+            const stored = localStorage.getItem('idealMemoryEvents');
+            const events = stored ? JSON.parse(stored) : [];
+            
+            const container = document.getElementById('storedEvents');
+            
+            if (events.length === 0) {
+                container.innerHTML = '<p>No events stored yet.</p>';
+                return;
+            }
+            
+            container.innerHTML = events.map((event, index) => `
+                <div class="data-item">
+                    <h4>Event #${index + 1}</h4>
+                    <p><strong>Name:</strong> ${event.name}</p>
+                    <p><strong>Mobile:</strong> ${event.mobile}</p>
+                    <p><strong>Email:</strong> ${event.email || 'Not provided'}</p>
+                    <p><strong>Event Type:</strong> ${event.eventType}</p>
+                    <p><strong>Date:</strong> ${event.eventDate}</p>
+                    <p><strong>Venue:</strong> ${event.venue}</p>
+                    <p><strong>Guests:</strong> ${event.guestCount || 'Not specified'}</p>
+                    <p><strong>Budget:</strong> ${event.budget || 'Not specified'}</p>
+                    <p><strong>Additional Info:</strong> ${event.additionalInfo || 'None'}</p>
+                    <p><strong>Submitted:</strong> ${new Date(event.timestamp).toLocaleString()}</p>
+                </div>
+            `).join('');
+        }
+
+        // Clear stored data
+        function clearStoredData() {
+            if (confirm('Are you sure you want to clear all stored data?')) {
+                localStorage.removeItem('idealMemoryEvents');
+                loadStoredData();
+            }
+        }
+
+        // Handle form submission
+        document.getElementById('eventForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            const eventData = {
+                name: formData.get('name'),
+                mobile: formData.get('mobile'),
+                email: formData.get('email'),
+                eventType: formData.get('eventType'),
+                eventDate: formData.get('eventDate'),
+                venue: formData.get('venue'),
+                guestCount: formData.get('guestCount'),
+                budget: formData.get('budget'),
+                additionalInfo: formData.get('additionalInfo'),
+                timestamp: new Date().toISOString()
+            };
+            
+            // Store in localStorage
+            const stored = localStorage.getItem('idealMemoryEvents');
+            const events = stored ? JSON.parse(stored) : [];
+            events.push(eventData);
+            localStorage.setItem('idealMemoryEvents', JSON.stringify(events));
+            
+            // Show success message
+            document.getElementById('successMessage').style.display = 'block';
+            setTimeout(() => {
+                document.getElementById('successMessage').style.display = 'none';
+            }, 5000);
+            
+            // Reload stored data display
+            loadStoredData();
+            
+            // Reset form
+            this.reset();
+            
+            console.log('Event data stored locally:', eventData);
+        });
+
+        // Load data on page load
+        loadStoredData();
+    </script>
+</body>
+</html>
+

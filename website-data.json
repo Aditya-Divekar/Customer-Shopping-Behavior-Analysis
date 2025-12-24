@@ -1,0 +1,174 @@
+{
+  "website": {
+    "name": "NextEra Event Planner Caterers",
+    "tagline": "Creating Unforgettable Memories",
+    "description": "Transform your special moments into extraordinary experiences with our premium event planning and catering services. From intimate gatherings to grand celebrations, we make every detail perfect.",
+    "logo": "images/logo.png",
+    "favicon": "favicon.ico"
+  },
+  "contact": {
+    "address": {
+      "street": "123 Event Street",
+      "city": "City",
+      "state": "State",
+      "zipcode": "12345",
+      "country": "United States"
+    },
+    "phone": {
+      "main": "+1 (555) 123-4567",
+      "mobile": "+1 (555) 987-6543",
+      "emergency": "+1 (555) 111-2222"
+    },
+    "email": {
+      "general": "info@idealmemory.com",
+      "events": "events@idealmemory.com",
+      "support": "support@idealmemory.com",
+      "careers": "careers@idealmemory.com"
+    },
+    "social": {
+      "facebook": "https://facebook.com/idealmemory",
+      "instagram": "https://instagram.com/idealmemory",
+      "twitter": "https://twitter.com/idealmemory",
+      "linkedin": "https://linkedin.com/company/idealmemory",
+      "youtube": "https://youtube.com/idealmemory",
+      "pinterest": "https://pinterest.com/idealmemory"
+    },
+    "hours": {
+      "monday": "9:00 AM - 6:00 PM",
+      "tuesday": "9:00 AM - 6:00 PM",
+      "wednesday": "9:00 AM - 6:00 PM",
+      "thursday": "9:00 AM - 6:00 PM",
+      "friday": "9:00 AM - 6:00 PM",
+      "saturday": "10:00 AM - 4:00 PM",
+      "sunday": "Closed"
+    }
+  },
+  "statistics": {
+    "eventsCompleted": 500,
+    "clientSatisfaction": 98,
+    "yearsExperience": 5,
+    "teamMembers": 50,
+    "awards": 12,
+    "countriesServed": 3
+  },
+  "features": [
+    {
+      "title": "Premium Quality",
+      "description": "We use only the finest ingredients and materials for all our services.",
+      "icon": "fas fa-star"
+    },
+    {
+      "title": "Expert Team",
+      "description": "Our experienced professionals ensure every detail is executed flawlessly.",
+      "icon": "fas fa-users"
+    },
+    {
+      "title": "Timely Service",
+      "description": "We respect your time and deliver everything on schedule.",
+      "icon": "fas fa-clock"
+    },
+    {
+      "title": "Quality Guarantee",
+      "description": "We stand behind our work with a 100% satisfaction guarantee.",
+      "icon": "fas fa-shield-alt"
+    },
+    {
+      "title": "Creative Solutions",
+      "description": "Our innovative approach helps bring your vision to life in unique ways.",
+      "icon": "fas fa-lightbulb"
+    },
+    {
+      "title": "Personal Touch",
+      "description": "We provide personalized service that makes each event feel special.",
+      "icon": "fas fa-heart"
+    }
+  ],
+  "navigation": [
+    {
+      "name": "Home",
+      "url": "/",
+      "icon": "fas fa-home"
+    },
+    {
+      "name": "Services",
+      "url": "/services.html",
+      "icon": "fas fa-concierge-bell"
+    },
+    {
+      "name": "About",
+      "url": "/about.html",
+      "icon": "fas fa-info-circle"
+    },
+    {
+      "name": "Contact",
+      "url": "/contact.html",
+      "icon": "fas fa-envelope"
+    }
+  ],
+  "footer": {
+    "quickLinks": [
+      {
+        "name": "Home",
+        "url": "/"
+      },
+      {
+        "name": "Services",
+        "url": "/services.html"
+      },
+      {
+        "name": "About Us",
+        "url": "/about.html"
+      },
+      {
+        "name": "Contact",
+        "url": "/contact.html"
+      }
+    ],
+    "services": [
+      {
+        "name": "Wedding Planning",
+        "url": "/services.html#wedding"
+      },
+      {
+        "name": "Birthday Parties",
+        "url": "/services.html#birthday"
+      },
+      {
+        "name": "Corporate Events",
+        "url": "/services.html#corporate"
+      },
+      {
+        "name": "Catering Services",
+        "url": "/services.html#catering"
+      }
+    ],
+    "legal": [
+      {
+        "name": "Privacy Policy",
+        "url": "/privacy-policy.html"
+      },
+      {
+        "name": "Terms of Service",
+        "url": "/terms-of-service.html"
+      },
+      {
+        "name": "Cookie Policy",
+        "url": "/cookie-policy.html"
+      }
+    ]
+  },
+  "seo": {
+    "keywords": [
+      "event planning",
+      "catering services",
+      "wedding planning",
+      "birthday parties",
+      "corporate events",
+      "event decoration",
+      "photography services",
+      "catering company"
+    ],
+    "metaDescription": "NextEra Event Planner Caterers - Premium event planning and catering services. Wedding planning, birthday parties, corporate events, and more. Creating unforgettable memories since 2019.",
+    "ogImage": "images/og-image.jpg"
+  }
+}

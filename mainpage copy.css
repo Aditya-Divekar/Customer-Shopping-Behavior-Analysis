@@ -1,0 +1,87 @@
+* {
+    max-resolution: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header {
+
+    height: 100vh;
+    background-image: -webkit-linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(bk1.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+ul {
+    float: right;
+    list-style-type: none;
+    margin-top: 25px;
+
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 5px 20px;
+    border: 1px solid #ffffff transparent;
+    transition: 0.6s ease;
+    
+}
+
+ul li a:hover {
+    background-color: #ffffff;
+    color: black;
+}
+
+ul li.active a {
+    background-color: #ffffff;
+    color: black;
+    
+}
+
+.logo img {
+    float: left;
+    width: 150px;
+    height: auto;
+}
+
+.main {
+    max-width: 1200px;
+    margin: auto;
+}
+.tittle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+
+.tittle h1{
+    color: #ffffff;
+    font-size: 80px;
+}
+.button{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.btn{
+    border: 1px solid #ffffff;
+    padding: 10px 30px;
+    text-decoration: none;
+    transition: 0.6s ease;
+}
+.btn:hover
+{
+    background-color: #ffffff;
+    color: black;
+}
+.button a{
+    color: #ffffff;
+}
